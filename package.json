@@ -1,0 +1,21 @@
+{
+  "name": "oku-bot",
+  "version": "1.0.0",
+  "description": "A framework bot for Wikia",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "bot",
+    "mediawiki",
+    "wikia",
+    "fandom"
+  ],
+  "author": "Saektide",
+  "license": "MIT",
+  "dependencies": {
+    "node-notifier": "^5.1.2",
+    "ajax-request": "^1.2.1"
+  }
+}
