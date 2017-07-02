@@ -15,7 +15,10 @@
   "author": "Saektide",
   "license": "MIT",
   "dependencies": {
-    "node-notifier": "^5.1.2",
-    "ajax-request": "^1.2.1"
+    "ajax-request": "^1.2.1",
+    "node-notifier": "^5.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.1.1"
   }
 }
