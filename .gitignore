@@ -6,6 +6,12 @@ yarn-debug.log*
 yarn-error.log*
 cache.json*
 
+# Batch test files
+test-*.bat
+
+#Cache file
+cache.json
+
 # Runtime data
 pids
 *.pid
@@ -57,3 +63,6 @@ typings/
 
 # dotenv environment variables file
 .env
+
+#Settings file
+settings.json

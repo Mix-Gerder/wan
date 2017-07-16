@@ -1,10 +1,10 @@
 {
-  "name": "oku-bot",
+  "name": "wan",
   "version": "1.0.0",
-  "description": "A framework bot for Wikia",
+  "description": "Notifies you about recent changes on a wiki (Wikia)",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "electron ."
   },
   "keywords": [
     "bot",
@@ -16,6 +16,7 @@
   "license": "MIT",
   "dependencies": {
     "ajax-request": "^1.2.1",
+    "electron": "^1.6.11",
     "node-notifier": "^5.1.2"
   },
   "devDependencies": {
