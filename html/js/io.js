@@ -46,7 +46,7 @@ function la() {
 							var user = arg.user
 							notifier.notify({
 								'title': 'WAN',
-								'message': `${titlePage} was changed by ${user}`,
+								'message': `${titlePage} was changed by ${user}`
 							});
 							la_title.innerHTML = `${titlePage} was changed`,
 							la_author.innerHTML = `by ${user}`;
