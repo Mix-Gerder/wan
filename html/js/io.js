@@ -18,7 +18,7 @@ temp_main[0].innerHTML = `WAN on ${site}`;
 
 
 function la() {
-	console.log('Requesting...');
+	setInterval(function(){
 		request({
 			url: 'http://' + site + '.wikia.com/api.php',
 			method: 'GET',
@@ -33,7 +33,6 @@ function la() {
 		}, function (err, res, body) {
 			var re = JSON.parse(body);
 			let arg = re.query.recentchanges[0]
-			console.log(arg)
 
 			fs.exists('cache.json', (exists) => {
 				if (exists) {
@@ -65,6 +64,7 @@ function la() {
 				}
 			})
 		})
+	}, 3000)
 }
 
 console.log('------\nDone.')

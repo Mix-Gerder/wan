@@ -4,6 +4,6 @@ document.getElementById('close-app').onclick = function() {
 }
 
 function init() {
-  let vt = setInterval(la(),500)
+  la()
 }
 document.onload = init()
