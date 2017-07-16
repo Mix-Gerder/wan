@@ -47,7 +47,6 @@ function la() {
 							notifier.notify({
 								'title': 'WAN',
 								'message': `${titlePage} was changed by ${user}`,
-								'icon': path.join(__dirname, 'Wiki.png')
 							});
 							la_title.innerHTML = `${titlePage} was changed`,
 							la_author.innerHTML = `by ${user}`;
