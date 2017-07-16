@@ -5,3 +5,4 @@ Make sure that the configuration file exists (settings.json) then run it with st
 # Dependencies
 * node-notifier
 * ajax-request
+* electron (for UI)

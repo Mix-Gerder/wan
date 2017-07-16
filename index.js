@@ -1,55 +1,35 @@
-const request = require('ajax-request')
-const fs = require('fs')
-const notifier = require('node-notifier')
+const {app, BrowserWindow} = require('electron')
 const path = require('path')
-const settings = require('./settings.json')
+const url = require('url')
 
+let win
 
-let site = settings.wiki
-console.log('Saved: ', site)
+function createWindow () {
+  win = new BrowserWindow({width: 800, height: 600})
 
-setInterval(() => { // Requesting API Info
-	request({
-		url: 'http://' + site + '.wikia.com/api.php',
-		method: 'GET',
-		data: {
-			action: 'query',
-			list: 'recentchanges', // <-- this
-			rclimit: '1',
-			rcshow: '!bot',
-			format: 'json'
-		}
-	}, function (err, res, body) {
-		var re = JSON.parse(body);
-		var arg = re.query.recentchanges[0]
+  win.loadURL(url.format({
+    pathname: path.join(__dirname, 'html/index.html'),
+    protocol: 'file:',
+    slashes: true
+  }))
 
-		fs.exists('cache.json', (exists) => {
-			if (exists) {
-				fs.readFile('cache.json', 'utf8', (err, data) => {
-					if (err) {
-						console.log(err)
-					}
-					var jfile = JSON.parse(data)
-					if (JSON.stringify(arg) !== JSON.stringify(jfile)) {
-						var titlePage = arg.title
-						notifier.notify({
-							'title': 'WAN',
-							'message': `${titlePage} was changed.`,
-							'icon': path.join(__dirname, 'Wiki.png')
-						});
-						fs.writeFile('cache.json', JSON.stringify(arg), (err) => {
-							if (err) throw err
-						})
-					}
-				})
-			} else {
-				fs.writeFile('cache.json', JSON.stringify(arg), (err) => {
-					if (err) throw err;
-					console.log('The file has been saved!')
-				})
-			}
-		})
-	})
-}, 5000)
+  win.webContents.openDevTools()
 
-console.log('------\nDone.')
+  win.on('closed', () => {
+    win = null
+  })
+}
+
+app.on('ready', createWindow)
+
+app.on('window-all-closed', () => {
+  if (process.platform !== 'darwin') {
+    app.quit()
+  }
+})
+
+app.on('activate', () => {
+  if (win === null) {
+    createWindow()
+  }
+})

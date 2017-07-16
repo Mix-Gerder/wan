@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body {
+  background: #2c3138;
+  color: #f5f5f5;
+  margin: 0 !important;
+  font-family: 'Open Sans', arial;
+}
+
+.header-app {
+    background: #39424e;
+}
+
+#close-app {
+  border: 0;
+  background: #5f6d7f;
+  padding: .3em .8em;
+  cursor: pointer;
+}
+
+.material-icons.md-light {
+    color: #fff;
+}
+
+#template-app {
+    margin: 2em;
+}
+
+#title-app {
+    border-left: 3px solid #40d2f3;
+    padding-left: 10px;
+}
+
+#last-activity {
+    background: #49525f;
+    padding: 1px 2em 1.8em 2em;
+    border-radius: 3px;
+}
+
+#l__author {
+    border-left: 2px solid #88de17;
+    padding-left: 1em;
+}
