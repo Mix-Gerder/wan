@@ -6,10 +6,6 @@ body {
   font-family: 'Open Sans', arial;
 }
 
-* {
-  outline: none;
-}
-
 .header-app {
     background: #39424e;
 }
@@ -22,7 +18,7 @@ body {
 }
 
 .material-icons.md-light {
-    color: #FFF;
+    color: #fff;
 }
 
 #template-app {

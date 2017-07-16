@@ -8,7 +8,7 @@ const settings = require('../settings.json')
 let temp_main = document.getElementById('template-app').children;
 
 let la_title = document.getElementById('l__title'),
-		la_author = document.getElementById('l__author')
+		la_author = document.getElementById('l__author');
 
 let site = settings.wiki
 
@@ -59,7 +59,7 @@ function la() {
 				} else {
 					fs.writeFile('cache.json', JSON.stringify(arg), (err) => {
 						if (err) throw err;
-						console.log('The file has been saved!')
+						console.log('The file has been saved!');
 					})
 				}
 			})
