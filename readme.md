@@ -1,3 +1,5 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/foundation-internal-oku/wan/badge)](https://www.codefactor.io/repository/github/foundation-internal-oku/wan)
+
 # Installing
 You can install WAN dependencies with install.bat or typing `npm install` in CMD.
 # Running
