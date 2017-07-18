@@ -1,0 +1,234 @@
+{
+  "en": {
+    "type":{
+      "edit": "edited",
+      "new": "created",
+      "log":{
+        "action":{
+          "block": {
+            "block": "blocked",
+            "reblock": "reblocked",
+            "unblock": "unblocked"
+          },
+          "protect": {
+            "protect": "protected",
+            "modify": "reprotected",
+            "unprotect": "unprotected",
+            "move_prot": "protected from a move"
+          },
+          "rights": {
+            "rights": "changed rights for",
+            "autopromote": "changed his rights"
+          },
+          "upload": {
+            "upload": "uploaded",
+            "overwrite": "overwrited",
+            "revert": "reverted"
+          },
+          "import": {
+            "upload": "imported",
+            "interwiki": "imported"
+          },
+          "merge": {
+            "merge": "merged"
+          },
+          "useravatar": {
+            "avatar_chn": "changed his avatar",
+            "avatar_rem": "removed the avatar of"
+          },
+          "chatban": {
+            "chatbanadd": "banned",
+            "chatbanremoved": "unbanned"
+          },
+          "delete": {
+            "delete": "deleted"
+          },
+          "newusers": {
+            "newusers": "created account"
+          },
+          "renameuser": {
+            "renameuser": "renamed"
+          },
+          "0": {
+            "wall_admindelete": "deteled permanently"
+          }
+        }
+      }
+    },
+    "misc":{
+      "was": "was",
+      "by": "por",
+      "was_sentences": {
+        "edit": "edited",
+        "new": "created",
+        "log": {
+          "action":{
+            "block": {
+              "block": "blocked",
+              "reblock": "reblocked",
+              "unblock": "unblocked"
+            },
+            "protect": {
+              "protect": "protected",
+              "modify": "reprotected",
+              "unprotect": "unprotected",
+              "move_prot": "protected from a move"
+            },
+            "rights": {
+              "rights": "changed his rights",
+              "autopromote": "changed his rights"
+            },
+            "upload": {
+              "upload": "uploaded",
+              "overwrite": "overwrited",
+              "revert": "reverted"
+            },
+            "import": {
+              "upload": "imported",
+              "interwiki": "imported"
+            },
+            "merge": {
+              "merge": "merged"
+            },
+            "useravatar": {
+              "avatar_chn": "changed his avatar",
+              "avatar_rem": "removed his avatar"
+            },
+            "chatban": {
+              "chatbanadd": "banned",
+              "chatbanremoved": "unbanned"
+            },
+            "delete": {
+              "delete": "deleted"
+            },
+            "newusers": {
+              "newusers": "created account"
+            },
+            "renameuser": {
+              "renameuser": "renamed"
+            },
+            "0": {
+              "wall_admindelete": "deteled permanently"
+            }
+          }
+        }
+      }
+    }
+  },
+  "es": {
+    "type":{
+      "edit": "editó",
+      "new": "creó",
+      "log":{
+        "action":{
+          "block": {
+            "block": "ha bloqueado a",
+            "reblock": "ha rebloqueado a",
+            "unblock": "ha desbloqueado a"
+          },
+          "protect": {
+            "protect": "ha protegido",
+            "modify": "ha reprotegido",
+            "unprotect": "ha desprotegido",
+            "move_prot": "ha protegido desde un traslado a"
+          },
+          "rights": {
+            "rights": "ha cambiado los derechos de",
+            "autopromote": "ha cambiado sus derechos"
+          },
+          "upload": {
+            "upload": "ha subido",
+            "overwrite": "ha sobre-escribido",
+            "revert": "ha revertido el archivo"
+          },
+          "import": {
+            "upload": "ha importado",
+            "interwiki": "ha importado"
+          },
+          "merge": {
+            "merge": "ha fusionado"
+          },
+          "useravatar": {
+            "avatar_chn": "cambió su avatar",
+            "avatar_rem": "removió el avatar de"
+          },
+          "chatban": {
+            "chatbanadd": "ha baneado a",
+            "chatbanremoved": "ha desbaneado a"
+          },
+          "delete": {
+            "delete": "ha eliminado"
+          },
+          "newusers": {
+            "newusers": "creó una cuenta"
+          },
+          "renameuser": {
+            "renameuser": "ha renombrado"
+          },
+          "0": {
+            "wall_admindelete": "ha eliminado permanentemente"
+          }
+        }
+      }
+    },
+    "misc":{
+      "was": "fue",
+      "by": "por",
+      "was_sentences": {
+        "edit": "editado",
+        "new": "creado",
+        "log": {
+          "action":{
+            "block": {
+              "block": "bloqueado",
+              "reblock": "rebloqueado",
+              "unblock": "desbloqueado"
+            },
+            "protect": {
+              "protect": "protegido",
+              "modify": "reprotegido",
+              "unprotect": "desprotegido",
+              "move_prot": "protegido desde un traslado"
+            },
+            "rights": {
+              "rights": "cambiado sus derechos",
+              "autopromote": "cambiado sus derechos"
+            },
+            "upload": {
+              "upload": "subido",
+              "overwrite": "sobre-escrito",
+              "revert": "revertido"
+            },
+            "import": {
+              "upload": "importado",
+              "interwiki": "importado"
+            },
+            "merge": {
+              "merge": "fusionado"
+            },
+            "useravatar": {
+              "avatar_chn": "cambiado su avatar",
+              "avatar_rem": "removido su avatar"
+            },
+            "chatban": {
+              "chatbanadd": "baneado",
+              "chatbanremoved": "desbaneado"
+            },
+            "delete": {
+              "delete": "eliminado"
+            },
+            "newusers": {
+              "newusers": "creada su cuenta"
+            },
+            "renameuser": {
+              "renameuser": "renombrado"
+            },
+            "0": {
+              "wall_admindelete": "eliminado permanentemente"
+            }
+          }
+        }
+      }
+    }
+  }
+}

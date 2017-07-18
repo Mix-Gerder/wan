@@ -1,21 +1,15 @@
-const request = require('ajax-request')
-const fs = require('fs')
-const notifier = require('node-notifier')
-const path = require('path')
-const settings = require('../settings.json')
+const request = require('ajax-request'),
+ 			fs = require('fs'),
+ 			path = require('path'),
+ 			settings = require('../settings.json');
 
 //HTML var
-let temp_main = document.getElementById('template-app').children;
+let temp_main = document.getElementById('template-app').children,
+		site = settings.wiki;
 
-let la_title = document.getElementById('l__title'),
-		la_author = document.getElementById('l__author');
-
-let site = settings.wiki
-
-console.log('Saved: ', site)
+console.log('Saved: ', site);
 
 temp_main[0].innerHTML = `WAN on ${site}`;
-
 
 function la() {
 	setInterval(function(){
@@ -26,7 +20,7 @@ function la() {
 				action: 'query',
 				list: 'recentchanges', // <-- this
 				rclimit: '1',
-				rcprop: 'title|timestamp|type|user',
+				rcprop: 'user|title|ids|loginfo|sizes|timestamp|comment',
 				rcshow: '!bot',
 				format: 'json'
 			}
@@ -42,14 +36,7 @@ function la() {
 						}
 						var jfile = JSON.parse(data)
 						if (JSON.stringify(arg) !== JSON.stringify(jfile)) {
-							var titlePage = arg.title
-							var user = arg.user
-							notifier.notify({
-								'title': 'WAN',
-								'message': `${titlePage} was changed by ${user}`
-							});
-							la_title.innerHTML = `${titlePage} was changed`,
-							la_author.innerHTML = `by ${user}`;
+							d(`WAN on ${site}`,arg);
 							fs.writeFile('cache.json', JSON.stringify(arg), (err) => {
 								if (err) throw err
 							})
@@ -66,4 +53,4 @@ function la() {
 	}, 3000)
 }
 
-console.log('------\nDone.')
+console.log('------\nDone.');

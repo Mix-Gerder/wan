@@ -10,7 +10,7 @@ body {
     background: #39424e;
 }
 
-#close-app {
+.btn-close {
   border: 0;
   background: #5f6d7f;
   padding: .3em .8em;
@@ -21,22 +21,22 @@ body {
     color: #fff;
 }
 
-#template-app {
+.t-app {
     margin: 2em;
 }
 
-#title-app {
+.tl-app {
     border-left: 3px solid #40d2f3;
     padding-left: 10px;
 }
 
-#last-activity {
+.la {
     background: #49525f;
     padding: 1px 2em 1.8em 2em;
     border-radius: 3px;
 }
 
-#l__author {
+.author-la {
     border-left: 2px solid #88de17;
     padding-left: 1em;
 }
