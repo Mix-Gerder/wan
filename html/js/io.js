@@ -5,7 +5,7 @@ const request = require('ajax-request'),
 
 //HTML var
 let temp_main = document.getElementById('template-app').children,
-		site = settings.wiki;
+		site = settings.wiki; //Settings
 
 console.log('Saved: ', site);
 

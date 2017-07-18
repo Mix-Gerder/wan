@@ -49,8 +49,12 @@
           "renameuser": {
             "renameuser": "renamed"
           },
+          "move": {
+            "move": "moved"
+          },
           "0": {
-            "wall_admindelete": "deteled permanently"
+            "wall_admindelete": "deteled permanently",
+            "wall_remove": "deleted"
           }
         }
       }
@@ -107,8 +111,12 @@
             "renameuser": {
               "renameuser": "renamed"
             },
+            "move": {
+              "move": "moved"
+            },
             "0": {
-              "wall_admindelete": "deteled permanently"
+              "wall_admindelete": "deteled permanently",
+              "wall_remove": "deleted"
             }
           }
         }
@@ -165,8 +173,12 @@
           "renameuser": {
             "renameuser": "ha renombrado"
           },
+          "move": {
+            "move": "ha movido"
+          },
           "0": {
-            "wall_admindelete": "ha eliminado permanentemente"
+            "wall_admindelete": "ha eliminado permanentemente",
+            "wall_remove": "ha eliminado"
           }
         }
       }
@@ -192,7 +204,7 @@
             },
             "rights": {
               "rights": "cambiado sus derechos",
-              "autopromote": "cambiado sus derechos"
+              "autopromote": "cambiado sus propios derechos"
             },
             "upload": {
               "upload": "subido",
@@ -223,8 +235,12 @@
             "renameuser": {
               "renameuser": "renombrado"
             },
+            "move": {
+              "move": "movido"
+            },
             "0": {
-              "wall_admindelete": "eliminado permanentemente"
+              "wall_admindelete": "eliminado permanentemente",
+              "wall_remove": "eliminado"
             }
           }
         }
