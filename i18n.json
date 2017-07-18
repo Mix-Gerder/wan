@@ -62,6 +62,7 @@
     "misc":{
       "was": "was",
       "by": "by",
+      "diff_link": "View diff changes of",
       "was_sentences": {
         "edit": "edited",
         "new": "created",
@@ -186,6 +187,7 @@
     "misc":{
       "was": "fue",
       "by": "por",
+      "diff_link": "Ver cambios de",
       "was_sentences": {
         "edit": "editado",
         "new": "creado",

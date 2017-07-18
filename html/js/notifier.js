@@ -5,6 +5,7 @@ let la_title = document.getElementById('l__title'),
     la_author = document.getElementById('l__author'),
     la_summary = document.getElementById('l__summary'),
     la_timestamp = document.getElementById('l__timestamp'),
+    la_diff_link = document.getElementById('l__link-diff'),
     prefered_lang = settings.lang;
 
 if (!msg[prefered_lang]) {
@@ -41,6 +42,16 @@ function d(tl, j) {
     la_summary.innerHTML = 'Summary no found!'
   }
   la_timestamp.innerHTML = `${timestamp__j} (UTC)`
+  if (j__t == 'edit') {
+    let current_revid = j.revid,
+        old_revid = j.old_revid,
+        mf__dl = msg[prefered_lang].misc.diff_link
+    la_diff_link.innerHTML = `${mf__dl} ${target} // ${current_revid}`;
+    la_diff_link.setAttribute('href', `http://${site}.wikia.com/${target}?diff=${current_revid}&oldid=${old_revid}`);
+  } else {
+    la_diff_link.innerHTML = '';
+    la_diff_link.setAttribute('href', '#');
+  }
   n(tl, mf__x);
 }
 

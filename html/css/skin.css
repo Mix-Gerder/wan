@@ -7,6 +7,7 @@ body {
 
 .header-app {
     background: #39424e;
+    text-align: right;
 }
 
 .btn-close {
@@ -50,4 +51,14 @@ body {
     border-left: 2px solid #e40f7b;
     padding-left: 1em;
     margin-top: 3px;
+}
+
+.link-diff-la {
+    color: #72d9f1;
+    border-left: 2px solid #1b92e6;
+    padding-left: 1em;
+    display: inline-block;
+    margin-top: 3px;
+    margin-left: 0;
+    text-decoration: none;
 }
