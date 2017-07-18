@@ -39,3 +39,15 @@ body {
     border-left: 2px solid #88de17;
     padding-left: 1em;
 }
+
+.summary-la {
+    border-left: 2px solid #f1b713;
+    padding-left: 1em;
+    margin-top: 3px;
+}
+
+.timestamp-la {
+    border-left: 2px solid #e40f7b;
+    padding-left: 1em;
+    margin-top: 3px;
+}
