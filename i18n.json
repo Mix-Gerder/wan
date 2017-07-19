@@ -38,7 +38,8 @@
           },
           "chatban": {
             "chatbanadd": "banned",
-            "chatbanremove": "unbanned"
+            "chatbanremove": "unbanned",
+            "chatbanchange": "rebanned"
           },
           "delete": {
             "delete": "deleted"
@@ -101,7 +102,8 @@
             },
             "chatban": {
               "chatbanadd": "banned",
-              "chatbanremove": "unbanned"
+              "chatbanremove": "unbanned",
+              "chatbanchange": "rebanned"
             },
             "delete": {
               "delete": "deleted"
@@ -163,7 +165,8 @@
           },
           "chatban": {
             "chatbanadd": "ha baneado a",
-            "chatbanremove": "ha desbaneado a"
+            "chatbanremove": "ha desbaneado a",
+            "chatbanchange": "ha rebaneado a"
           },
           "delete": {
             "delete": "ha eliminado"
@@ -226,7 +229,8 @@
             },
             "chatban": {
               "chatbanadd": "baneado",
-              "chatbanremove": "desbaneado"
+              "chatbanremove": "desbaneado",
+              "chatbanchange": "rebaneado"
             },
             "delete": {
               "delete": "eliminado"
