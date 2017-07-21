@@ -34,26 +34,41 @@ body {
     background: #49525f;
     padding: 1px 2em 1.8em 2em;
     border-radius: 3px;
+    margin-top: 5px;
+    display: block;
 }
 
-.author-la {
+.ul-app {
+    padding: 0;
+}
+
+#l__dom_name {
+    background: #5f6a7b;
+    display: inline-block;
+    padding: 5px 15px;
+    margin-left: -32px;
+    border-radius: 0 5px 5px 0;
+    margin-top: 2px;
+}
+
+#l__author {
     border-left: 2px solid #88de17;
     padding-left: 1em;
 }
 
-.summary-la {
+#l__summary {
     border-left: 2px solid #f1b713;
     padding-left: 1em;
     margin-top: 3px;
 }
 
-.timestamp-la {
+#l__timestamp {
     border-left: 2px solid #e40f7b;
     padding-left: 1em;
     margin-top: 3px;
 }
 
-.link-diff-la {
+#l__link-diff {
     color: #72d9f1;
     border-left: 2px solid #1b92e6;
     padding-left: 1em;

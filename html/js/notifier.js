@@ -1,19 +1,14 @@
 const msg = require('../i18n.json'),
       notifier = require('node-notifier');
 
-let la_title = document.getElementById('l__title'),
-    la_author = document.getElementById('l__author'),
-    la_summary = document.getElementById('l__summary'),
-    la_timestamp = document.getElementById('l__timestamp'),
-    la_diff_link = document.getElementById('l__link-diff'),
-    prefered_lang = settings.lang;
+let prefered_lang = settings.config.lang;
 
 if (!msg[prefered_lang]) {
     console.log(`${prefered_lang} no found, traslated to "en" (English).`);
     prefered_lang = 'en';
 }
 
-function d(tl, j) {
+function d(s, tl, j) {
   let j__t = j.type,
       mf__x = '',
       mf__a = '',
@@ -33,6 +28,16 @@ function d(tl, j) {
     mf__ba += msg[prefered_lang].misc.was_sentences[j__t];
   }
   mf__x += `${usr} ${mf__a} ${target}`;
+  //inner HTML
+
+  let tr = document.getElementById(s).getElementsByTagName('*');
+  // Tags
+  let la_title = tr[1],
+      la_author = tr[2],
+      la_summary = tr[3],
+      la_timestamp = tr[4],
+      la_diff_link = tr[5];
+
   la_title.innerHTML = `${target} ${mf__w} ${mf__ba}`,
   la_author.innerHTML = `${mf__b} ${usr}`;
   if (j.comment) {
@@ -47,7 +52,7 @@ function d(tl, j) {
         old_revid = j.old_revid,
         mf__dl = msg[prefered_lang].misc.diff_link
     la_diff_link.innerHTML = `${mf__dl} ${target} // ${current_revid}`;
-    la_diff_link.setAttribute('href', `http://${site}.wikia.com/${target}?diff=${current_revid}&oldid=${old_revid}`);
+    la_diff_link.setAttribute('href', `http://${s}.wikia.com/${target}?diff=${current_revid}&oldid=${old_revid}`);
   } else {
     la_diff_link.innerHTML = '';
     la_diff_link.setAttribute('href', '#');

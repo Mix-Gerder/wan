@@ -4,13 +4,10 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-cache.json*
+cache-*.json
 
 # Batch test files
 test-*.bat
-
-#Cache file
-cache.json
 
 # Runtime data
 pids

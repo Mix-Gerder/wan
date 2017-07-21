@@ -1,1 +1,6 @@
-{"wiki": "community", "lang": "en"}
+{
+  "sites":["community","communitytest"],
+  "config":{
+    "lang": "en"
+  }
+}
