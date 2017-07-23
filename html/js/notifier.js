@@ -32,11 +32,11 @@ function d(s, tl, j) {
 
   let tr = document.getElementById(s).getElementsByTagName('*');
   // Tags
-  let la_title = tr[1],
-      la_author = tr[2],
-      la_summary = tr[3],
-      la_timestamp = tr[4],
-      la_diff_link = tr[5];
+  let la_title = tr[3],
+      la_author = tr[4],
+      la_summary = tr[5],
+      la_timestamp = tr[6],
+      la_diff_link = tr[7];
 
   la_title.innerHTML = `${target} ${mf__w} ${mf__ba}`,
   la_author.innerHTML = `${mf__b} ${usr}`;

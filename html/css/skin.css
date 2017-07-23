@@ -5,6 +5,15 @@ body {
   font-family: 'Open Sans', arial;
 }
 
+/* Key frames */
+
+@keyframes la_appear {
+  from {position:relative; top: -6px; opacity: 0;}
+  to {position:relative; top: 0; opacity: 1;}
+}
+
+/* Main style */
+
 .header-app {
     background: #39424e;
     text-align: right;
@@ -34,12 +43,45 @@ body {
     background: #49525f;
     padding: 1px 2em 1.8em 2em;
     border-radius: 3px;
-    margin-top: 5px;
+    margin-top: 17px;
     display: block;
+    filter: drop-shadow(3px 3px 0 rgba(0,0,0,.4));
+    animation: la_appear .3s;
 }
 
 .ul-app {
     padding: 0;
+}
+
+#btn-add-wiki {
+    border: 0;
+    background: #5f6a7b;
+    color: #fff;
+    padding: 1em 1.2em 1em 4em;
+    cursor: pointer;
+}
+
+#btn-add-wiki .material-icons {
+    font-size: 23pt;
+    position: absolute;
+    margin-left: -1.3em;
+    margin-top: -7px;
+}
+
+#l__btn_rmv {
+    position: absolute;
+    right: 13px;
+    background: #d05151;
+    color: #fff;
+    padding: 4px 6px;
+    margin-top: 5px;
+    border: 4px solid #49525f;
+    border-radius: 100px;
+}
+
+#l__btn_rmv i {
+    font-size: 13pt;
+    margin-top: 2px;
 }
 
 #l__dom_name {
@@ -47,8 +89,8 @@ body {
     display: inline-block;
     padding: 5px 15px;
     margin-left: -32px;
-    border-radius: 0 5px 5px 0;
-    margin-top: 2px;
+    border-radius: 0 0 5px 0;
+    margin-top: -1px;
 }
 
 #l__author {
@@ -76,4 +118,56 @@ body {
     margin-top: 3px;
     margin-left: 0;
     text-decoration: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    background: rgba(0,0,0,.6);
+    top: 35px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.modal-window {
+    background: #2c323a;
+    padding: 2em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.modal-window h3 {
+    margin-top: 0;
+}
+
+#modal-body input {
+    background: #59626f !important;
+    padding: 5px 10px;
+    margin: 10px 0;
+    color: #fff;
+    width: 35%;
+    border-radius: 3px;
+    border: 2px solid #6e7682;
+}
+
+#btn-close-customModal {
+    border: 0;
+    background: #c53e3e;
+    color: #fff;
+    padding: 0.7em 1.8em;
+    border-bottom: 3px solid #963434;
+    border-radius: 4px;
+}
+
+#btn-add-elwiki-list {
+    border: 0;
+    background: #4097b1;
+    color: #fff;
+    padding: 0.7em 1.8em;
+    border-bottom: 3px solid #37788c;
+    border-radius: 4px;
 }

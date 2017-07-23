@@ -11,6 +11,20 @@ console.log('Wikis: ', sites);
 
 temp_main[0].innerHTML = 'WAN';
 
+function fetch_theme_wiki(w) {
+  request({
+    url: 'http://'+w+'.wikia.com/api/v1/Mercury/WikiVariables',
+    method: 'GET'
+  },
+ function (err, res, body) {
+   let re = JSON.parse(body),
+       fi = re.data.theme;
+
+   re_fi = fi['color-links']
+   document.getElementById(w).style.borderLeft = `3px solid ${re_fi}`
+ })
+}
+
 function la() {
 	setInterval(function(){
     for (let i = 0; i < sites.length; i++) {
